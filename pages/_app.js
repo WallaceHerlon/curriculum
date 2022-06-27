@@ -1,11 +1,21 @@
+
 import React from 'react'
 import App from 'next/app'
 import '../css/style.css'
 
 class MyApp extends App {
-    return () {
-        const { Component, pageProps } = this.pageProps
-        return < Component {...pageProps}/>
+    render() {
+        const { Component, pageProps } = this.props
+        return (
+            <React.Fragment>
+                <style jsx global>
+                    {`
+                        @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap');
+                    `}
+                </style>
+                <Component {...pageProps} />
+            </React.Fragment>
+        )
     }
 }
 
