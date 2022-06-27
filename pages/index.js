@@ -4,9 +4,21 @@ import getUser from '../utils/getUser'
 const Index = ({ repos, user }) => {
     return (
         <div className='container mx-auto'>
-            <h1 className='text-5xl'>Olá, eu sou o Wallace Herlon!</h1>
-            <h2 className='font-bold text-3xl'>Meus repositórios no Github</h2>
-            <p>Github stats: public repos: {user.public_repos} / public gists: {user.public_gists} / followers {user.followers}</p>
+            <div className='grid grid-cols-2 pt-16'>
+                <div>
+                    <h1 className='text-4xl uppercase'>Olá, eu sou o Wallace Herlon!</h1>
+                    <h2 className='font-bold text-5xl uppercase'>Fullstack Developer</h2>
+                    <h3>Contato</h3>
+                    <ul>
+                        <li>linkedin</li>
+                    </ul>
+                    <p>Github stats: public repos: {user.public_repos} / public gists: {user.public_gists} / followers {user.followers}</p>
+                </div>
+                <div>
+                    <img src='/images/wallaceherlon.png'/>
+                </div>
+            </div>
+
             {repos.map(repo => {
                 return (
                     <div key={repo.id} className='rounded bg-gray-200 mx-8 my-8 p-4 hover:shadow-md'>
