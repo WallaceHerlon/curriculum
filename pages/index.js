@@ -9,7 +9,7 @@ import Repos from '../Components/Repos'
 
 const Index = ({ repos, user }) => {
     return (
-        <div className='container mx-auto bg-network-left lg:bg-network-right'>
+        <div className='container mx-auto bg-network bg-network-left lg:bg-network-right'>
             <PageHead />
             <Hero />
             <Summary />
