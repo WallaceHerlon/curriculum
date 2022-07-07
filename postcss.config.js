@@ -1,7 +1,7 @@
 const purgecss = [
   '@fullhuman/postcss-purgecss',
   {
-    content: ['./components/**/*.js', './pages/**/*.js'],
+    content: ['./Components/**/*.js', './pages/**/*.js'],
     whitelist: ['body', 'html'],
     whitelistPatterns: [/psv-/],
     whitelistPatternsChildren: [/psv-/],

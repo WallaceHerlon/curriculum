@@ -1,11 +1,11 @@
 import React from 'react'
 import getUser from '../utils/getUser'
-import PageHead from '../components/PageHead'
-import Hero from '../components/Hero'
-import Summary from '../components/Summary'
-import Education from '../components/Education'
-import Footer from '../components/Footer'
-import Repos from '../components/Repos'
+import PageHead from '../Components/PageHead'
+import Hero from '../Components/Hero'
+import Summary from '../Components/Summary'
+import Education from '../Components/Education'
+import Footer from '../Components/Footer'
+import Repos from '../Components/Repos'
 
 const Index = ({ repos, user }) => {
     return (
